@@ -83,7 +83,7 @@
 ══════════════════════════════════ -->
 <header id="mainHeader" class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300">
   <nav class="flex justify-between items-center px-6 md:px-10 py-4 max-w-screen-xl mx-auto">
-    <a href="#" class="flex items-center gap-2 font-extrabold text-zinc-900 tracking-tight font-headline">
+    <a href="#" class="flex items-center gap-2 font-extrabold text-primary tracking-tight font-headline">
       <img src="img/logo.png"
            onerror="this.style.display='none'"
            alt="Amor de Perro Logo"
@@ -100,7 +100,7 @@
     <a href="https://wa.me/50689452667?text=¡Hola!%20Quisiera%20reservar%20una%20cita%20en%20Amor%20de%20Perro."
        target="_blank"
        class="bg-primary text-on-primary px-5 py-2.5 rounded-full font-headline font-bold text-sm hover:opacity-85 transition-all active:scale-95 flex items-center gap-2">
-      <img src="img/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5 brightness-0 invert">
+      <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">chat</span>
       Reservar
     </a>
   </nav>
@@ -111,13 +111,13 @@
 <!-- ══════════════════════════════════
      HERO
 ══════════════════════════════════ -->
-<section class="relative px-6 md:px-10 py-10 md:py-20 max-w-screen-xl mx-auto overflow-hidden">
+<section class="relative px-6 md:px-10 py-16 md:py-28 max-w-screen-xl mx-auto overflow-hidden">
   <div class="grid md:grid-cols-2 gap-12 items-center">
     <div class="z-10">
       <span class="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-xs font-bold tracking-widest uppercase mb-6">
         Estilo &amp; Bienestar · Moravia, CR
       </span>
-      <h1 class="text-6xl md:text-7xl font-headline font-extrabold text-zinc-900 leading-[1.1] mb-6">
+      <h1 class="text-6xl md:text-7xl font-headline font-extrabold text-primary leading-[1.1] mb-6 decorative-underline">
         Grooming con Amor
       </h1>
       <p class="text-lg text-on-surface-variant max-w-md mb-10 leading-relaxed">
@@ -127,10 +127,10 @@
         <a href="https://wa.me/50689452667?text=¡Hola!%20Me%20interesan%20los%20servicios%20de%20Amor%20de%20Perro."
            target="_blank"
            class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:opacity-90 transition-all">
-          <img src="img/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5 brightness-0 invert"> Agendar por WhatsApp
+          <span class="material-symbols-outlined">chat</span> Agendar por WhatsApp
         </a>
         <a href="#servicios"
-           class="border-2 border-primary text-zinc-900 px-8 py-4 rounded-full font-headline font-bold hover:bg-primary hover:text-on-primary transition-all">
+           class="border-2 border-primary text-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-primary hover:text-on-primary transition-all">
           Ver Servicios
         </a>
       </div>
@@ -147,10 +147,10 @@
       </div>
       <!--  <div class="absolute bottom-8 left-4 bg-surface-container-lowest p-5 rounded-xl shadow-2xl max-w-[190px] border border-outline-variant/20">
         <div class="flex items-center gap-2 mb-2">
-          <span class="p-1.5 bg-primary-fixed rounded-full text-zinc-900">
+          <span class="p-1.5 bg-primary-fixed rounded-full text-primary">
             <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
           </span>
-          <span class="font-headline font-bold text-zinc-900 text-sm">Hyponic Natural</span>
+          <span class="font-headline font-bold text-primary text-sm">Hyponic Natural</span>
         </div>
        <p class="text-xs text-on-surface-variant">Hipoalergénico · Libre de químicos irritantes.</p>
       </div>-->
@@ -161,10 +161,10 @@
 <!-- ══════════════════════════════════
      SERVICIOS
 ══════════════════════════════════ -->
-<section class="px-6 md:px-10 py-16 bg-surface-container-low" id="servicios">
+<section class="px-6 md:px-10 py-24 bg-surface-container-low" id="servicios">
   <div class="max-w-screen-xl mx-auto">
-    <div class="mb-10">
-      <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-zinc-900 mb-4">Experiencias Exclusivas</h2>
+    <div class="mb-14">
+      <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary mb-4">Experiencias Exclusivas</h2>
       <p class="text-on-surface-variant max-w-xl">Mucho más que un simple baño. Un ritual de belleza diseñado para cada tipo de manto.</p>
     </div>
     <!-- Bento grid — tamaños variados, inspirado en la referencia -->
@@ -211,20 +211,24 @@
 
       <!-- FILA 2 -->
 
-      <!-- Card mediana: Grooming para Gatos — color sólido + badge -->
-      <div class="md:col-span-4 bg-primary-fixed rounded-2xl p-8 flex flex-col justify-between min-h-[280px] shadow-md relative overflow-hidden">
-        <div class="absolute bottom-3 right-3 opacity-10">
-          <span class="material-symbols-outlined text-[7rem] text-zinc-900">pets</span>
+      <!-- Card mediana: Grooming para Gatos — imagen de fondo + badge -->
+      <div class="md:col-span-4 group relative overflow-hidden rounded-2xl min-h-[280px] shadow-md">
+        <img src="img/servicio-gatos.jpg"
+             onerror="this.src='img/servicio-gatos.jpg'"
+             alt="Grooming felino especializado en Amor de Perro, Moravia"
+             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10"></div>
+        <div class="relative z-10 h-full flex flex-col justify-between p-7 text-white">
+          <span class="inline-block bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full w-fit">Nuevo Servicio</span>
+          <div>
+            <h3 class="text-2xl font-headline font-bold mb-2">Grooming para Gatos</h3>
+            <p class="opacity-85 text-sm leading-relaxed mb-3">Manejo especializado sin sedación, enfocado en el bienestar felino y reducción de estrés.</p>
+            <a href="https://wa.me/50689452667?text=¡Hola!%20Quisiera%20info%20sobre%20grooming%20para%20gatos." target="_blank"
+               class="inline-flex items-center gap-1.5 text-primary-fixed font-headline font-bold text-sm hover:gap-3 transition-all w-fit">
+              Consultar precio <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </a>
+          </div>
         </div>
-        <div>
-          <span class="inline-block bg-zinc-900 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Nuevo Servicio</span>
-          <h3 class="text-2xl font-headline font-bold text-zinc-900 mb-3">Grooming para Gatos</h3>
-          <p class="text-zinc-700 text-sm leading-relaxed">Manejo especializado sin sedación, enfocado en el bienestar felino y reducción de estrés.</p>
-        </div>
-        <a href="https://wa.me/50689452667?text=¡Hola!%20Quisiera%20info%20sobre%20grooming%20para%20gatos." target="_blank"
-           class="inline-flex items-center gap-1.5 text-zinc-900 font-headline font-bold text-sm hover:gap-3 transition-all w-fit">
-          Consultar precio <span class="material-symbols-outlined text-base">arrow_forward</span>
-        </a>
       </div>
 
       <!-- Card mediana: Colorimetría Creativa — imagen de fondo + badge -->
@@ -269,8 +273,8 @@
 <!-- ══════════════════════════════════
      NOSOTROS
 ══════════════════════════════════ -->
-<section class="px-6 md:px-10 py-16 max-w-screen-xl mx-auto" id="nosotros">
-  <div class="grid md:grid-cols-2 gap-10 items-center">
+<section class="px-6 md:px-10 py-24 max-w-screen-xl mx-auto" id="nosotros">
+  <div class="grid md:grid-cols-2 gap-16 items-center">
     <!-- Imagen -->
     <div class="relative">
       <div class="absolute -inset-3 bg-primary-fixed/40 rounded-xl rotate-2 hidden md:block"></div>
@@ -284,8 +288,8 @@
       </div>
       <!-- Badge años de experiencia -->
       <div class="absolute -bottom-5 -right-3 md:-right-6 w-28 h-28 bg-primary-fixed rounded-full flex flex-col items-center justify-center border-4 border-white shadow-xl z-10">
-        <span class="text-zinc-900 font-headline font-extrabold text-3xl leading-none">Grooming</span>
-        <span class="text-zinc-900 text-[10px] font-bold tracking-widest uppercase mt-1">con Amor</span>
+        <span class="text-primary font-headline font-extrabold text-3xl leading-none">Grooming</span>
+        <span class="text-primary text-[10px] font-bold tracking-widest uppercase mt-1">con Amor</span>
       </div>
     </div>
 
@@ -294,32 +298,32 @@
       <span class="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-xs font-bold tracking-widest uppercase mb-6">
         Quiénes somos
       </span>
-      <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-zinc-900 mb-6 leading-tight">
+      <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary mb-6 leading-tight">
         El Alma detrás de<br/>Amor de Perro
       </h2>
       <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
         Nacimos de la pasión por el bienestar animal en Moravia, San José. Nuestra misión es transformar el grooming en una experiencia placentera, libre de estrés, donde cada perrito recibe el amor y cuidado que merece.
       </p>
       <p class="text-base text-on-surface-variant mb-10 leading-relaxed">
-        Usamos exclusivamente productos <strong class="text-zinc-900">Hyponic</strong> — naturales e hipoalergénicos — porque creemos que lo que toca la piel de tu mascota importa tanto como el resultado estético.
+        Usamos exclusivamente productos <strong class="text-primary">Hyponic</strong> — naturales e hipoalergénicos — porque creemos que lo que toca la piel de tu mascota importa tanto como el resultado estético.
       </p>
       <ul class="space-y-5">
         <li class="flex items-start gap-4">
-          <span class="material-symbols-outlined text-zinc-900 bg-primary-fixed p-1.5 rounded-full text-lg shrink-0 mt-0.5" style="font-variation-settings:'FILL' 1;">check</span>
+          <span class="material-symbols-outlined text-primary bg-primary-fixed p-1.5 rounded-full text-lg shrink-0 mt-0.5" style="font-variation-settings:'FILL' 1;">check</span>
           <div>
             <span class="font-headline font-bold block text-on-surface">Groomers Certificados</span>
             <span class="text-sm text-on-surface-variant">Constantemente actualizados en las últimas tendencias y técnicas de bienestar animal.</span>
           </div>
         </li>
         <li class="flex items-start gap-4">
-          <span class="material-symbols-outlined text-zinc-900 bg-primary-fixed p-1.5 rounded-full text-lg shrink-0 mt-0.5" style="font-variation-settings:'FILL' 1;">check</span>
+          <span class="material-symbols-outlined text-primary bg-primary-fixed p-1.5 rounded-full text-lg shrink-0 mt-0.5" style="font-variation-settings:'FILL' 1;">check</span>
           <div>
             <span class="font-headline font-bold block text-on-surface">Espacio Tranquilo y Seguro</span>
             <span class="text-sm text-on-surface-variant">Ambiente diseñado para reducir el estrés de tu mascota durante toda la sesión.</span>
           </div>
         </li>
         <li class="flex items-start gap-4">
-          <span class="material-symbols-outlined text-zinc-900 bg-primary-fixed p-1.5 rounded-full text-lg shrink-0 mt-0.5" style="font-variation-settings:'FILL' 1;">check</span>
+          <span class="material-symbols-outlined text-primary bg-primary-fixed p-1.5 rounded-full text-lg shrink-0 mt-0.5" style="font-variation-settings:'FILL' 1;">check</span>
           <div>
             <span class="font-headline font-bold block text-on-surface">Ética Animal ante todo</span>
             <span class="text-sm text-on-surface-variant">Priorizamos la salud física y emocional de cada mascota por encima de todo.</span>
@@ -348,9 +352,9 @@
 <!-- ══════════════════════════════════
      TARIFAS
 ══════════════════════════════════ -->
-<section class="px-6 md:px-10 py-16 bg-[#f8f9fa]" id="tarifas">
+<section class="px-6 md:px-10 py-24 bg-[#f8f9fa]" id="tarifas">
   <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-zinc-900 mb-4">Tarifas del Studio</h2>
+    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary mb-4">Tarifas del Studio</h2>
     <p class="text-zinc-400 text-xs mb-12">Precios base según el tamaño y tipo de pelaje. Todos nuestros servicios incluyen corte de uñas y limpieza de oídos.</p>
     <div class="overflow-x-auto">
       <table class="w-full text-left border-collapse">
@@ -369,7 +373,7 @@
               <span class="text-xs text-zinc-400">Shampoo Hyponic + Secado + Uñas + Oídos</span>
             </td>
             <td class="py-6 text-center border-b border-zinc-100 text-zinc-500 font-headline font-bold">₡8,000</td>
-            <td class="py-6 text-center border-b border-zinc-100 font-headline font-bold text-zinc-900 bg-primary-fixed/20">₡12,000</td>
+            <td class="py-6 text-center border-b border-zinc-100 font-headline font-bold text-primary bg-primary-fixed/20">₡12,000</td>
             <td class="py-6 text-center border-b border-zinc-100 text-zinc-500 font-headline font-bold">₡16,000</td>
           </tr>
           <tr class="group hover:bg-surface-container-low/50 transition-colors">
@@ -379,7 +383,7 @@
             </td>
             <td class="py-6 text-center border-b border-zinc-100 text-zinc-500 font-headline font-bold">₡15,000</td>
             <td class="py-6 text-center border-b border-zinc-100 bg-primary-fixed/20 font-headline font-bold">
-              <span class="block text-zinc-900">₡20,000</span>
+              <span class="block text-primary">₡20,000</span>
               <span class="text-[10px] bg-secondary text-white px-2 py-0.5 rounded-full font-bold">POPULAR</span>
             </td>
             <td class="py-6 text-center border-b border-zinc-100 text-zinc-500 font-headline font-bold">₡28,000</td>
@@ -390,7 +394,7 @@
               <span class="text-xs text-zinc-400">Baño + Corte + Uñas + Oídos + Glándulas + Lazo</span>
             </td>
             <td class="py-6 text-center border-b border-zinc-100 text-zinc-500 font-headline font-bold">₡18,000</td>
-            <td class="py-6 text-center border-b border-zinc-100 font-headline font-bold text-zinc-900 bg-primary-fixed/20">₡25,000</td>
+            <td class="py-6 text-center border-b border-zinc-100 font-headline font-bold text-primary bg-primary-fixed/20">₡25,000</td>
             <td class="py-6 text-center border-b border-zinc-100 text-zinc-500 font-headline font-bold">₡35,000</td>
           </tr>
           <tr class="group hover:bg-surface-container-low/50 transition-colors">
@@ -415,7 +419,7 @@
       <a href="https://wa.me/50689452667?text=¡Hola!%20Quisiera%20una%20cotización%20de%20grooming."
          target="_blank"
          class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:opacity-90 transition-all">
-        <img src="img/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5 brightness-0 invert">
+        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">chat</span>
         Cotizar por WhatsApp
       </a>
     </div>
@@ -425,20 +429,20 @@
 <!-- ══════════════════════════════════
      TESTIMONIOS
 ══════════════════════════════════ -->
-<section class="px-6 md:px-10 py-16" id="testimonios">
+<section class="px-6 md:px-10 py-24" id="testimonios">
   <div class="max-w-screen-xl mx-auto bg-primary rounded-xl p-12 md:p-20 relative overflow-hidden">
     <span class="material-symbols-outlined absolute top-10 right-10 text-9xl text-white/10 select-none" style="font-variation-settings:'FILL' 1;">format_quote</span>
-    <div class="relative z-10 mb-10">
-      <h2 class="text-4xl md:text-6xl font-headline font-extrabold text-white leading-tight">Lo que dicen los<br/>Pet Parents <span class="text-white opacity-90">🐾🐾</span></h2>
+    <div class="relative z-10 mb-14">
+      <h2 class="text-4xl md:text-6xl font-headline font-extrabold text-white leading-tight">Lo que dicen los<br/>Pet Parents 🐾</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6 relative z-10">
       <div class="bg-surface-container-lowest p-8 rounded-xl shadow-xl">
         <div class="flex text-secondary mb-4 gap-0.5">
           <span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span>
         </div>
-        <p class="text-on-surface mb-6 italic text-sm leading-relaxed">"¡Me encanta! Nadie había dejado a mi Toby tan bonito como lo hicieron ustedes. Les deseo muchos éxitos, ya tienen al cliente #1. Los voy a recomendar por el tiempo, la paciencia, la responsabilidad y el amor con el que trabajan. Mil gracias, bendiciones."</p>
+        <p class="text-on-surface mb-6 italic text-sm leading-relaxed">"Ehhhh me encanta, que dicha que ya abrieron. Nadie habia dejado a mi Toby tan bonito como lo hizo usted.Te deseo muchos exitos y ya tienes al cliente #1, los voy a super recomendar por el tiempo, la paciencia, la responsabilidad y el amorcon el que trabajan y la belleza como dejaron a Toby, mil gracias, bendiciones"</p>
         <div class="flex items-center gap-4">
-          <div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-zinc-900 text-sm font-headline">TT</div>
+          <div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary text-sm font-headline">TT</div>
           <div><span class="block font-bold text-sm">Tati</span><span class="text-xs text-on-surface-variant">Moravia, San José</span></div>
         </div>
       </div>
@@ -446,7 +450,7 @@
         <div class="flex text-secondary mb-4 gap-0.5">
           <span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span>
         </div>
-        <p class="text-on-surface mb-6 italic text-sm leading-relaxed">"Quisiera compartir con todas las mamás de perritos una linda experiencia que tuve en Amor de Perro. Es un lugar exclusivo y el trato ha sido excelente para mis perritos."</p>
+        <p class="text-on-surface mb-6 italic text-sm leading-relaxed">"Buenas tardes me gustaria compartir con todas las mamas de los perrunos una linda experiencia que he tenido con la peluqueria y tienda Amor de Perro, es una experiencia exclusiva, el trato ha sido excelente para mis perrunos."</p>
         <div class="flex items-center gap-4">
           <div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary text-sm font-headline">DD</div>
           <div><span class="block font-bold text-sm">Doña Daisy</span><span class="text-xs text-on-surface-variant">Moravia, San José</span></div>
@@ -456,7 +460,7 @@
         <div class="flex text-secondary mb-4 gap-0.5">
           <span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">star</span>
         </div>
-        <p class="text-on-surface mb-6 italic text-sm leading-relaxed">"¡Quedé enamorada! Aquí estoy peinándola todos los días para que le dure más."</p>
+        <p class="text-on-surface mb-6 italic text-sm leading-relaxed">"Quede enamorada! Ahi estoy peinandola todos los dias para que le dure mas"</p>
         <div class="flex items-center gap-4">
           <div class="w-11 h-11 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-tertiary text-sm font-headline">KKM</div>
           <div><span class="block font-bold text-sm">Kiki</span><span class="text-xs text-on-surface-variant">Moravia, San José</span></div>
@@ -469,24 +473,24 @@
 <!-- ══════════════════════════════════
      GALERÍA
 ══════════════════════════════════ -->
-<section class="py-16 bg-surface" id="galeria">
+<section class="py-24 bg-surface" id="galeria">
   <div class="max-w-screen-xl mx-auto px-6 md:px-10">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-14 gap-6">
       <div>
-        <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-zinc-900">Galería de Estilo</h2>
+        <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary">Galería de Estilo</h2>
         <p class="text-on-surface-variant mt-2">Un vistazo a nuestros clientes más guapos después del grooming. 🌟</p>
       </div>
       <div class="flex items-center gap-4">
         <div class="flex gap-2">
-          <button class="w-11 h-11 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors text-zinc-900">
+          <button class="w-11 h-11 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors text-primary">
             <span class="material-symbols-outlined">chevron_left</span>
           </button>
-          <button class="w-11 h-11 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors text-zinc-900">
+          <button class="w-11 h-11 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors text-primary">
             <span class="material-symbols-outlined">chevron_right</span>
           </button>
         </div>
         <a href="https://www.instagram.com/amordeperro_cr" target="_blank"
-           class="font-headline font-bold text-zinc-900 flex items-center gap-1.5 hover:underline text-sm">
+           class="font-headline font-bold text-primary flex items-center gap-1.5 hover:underline text-sm">
           Ver todo en Instagram
           <span class="material-symbols-outlined text-sm">open_in_new</span>
         </a>
@@ -589,7 +593,7 @@
 <!-- ══════════════════════════════════
      CTA / CONTACTO
 ══════════════════════════════════ -->
-<section class="py-16 px-6 md:px-10" id="contacto">
+<section class="py-24 px-6 md:px-10" id="contacto">
   <div class="max-w-screen-xl mx-auto bg-primary rounded-xl overflow-hidden relative border border-secondary/10 shadow-2xl">
     <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/20 to-transparent hidden lg:block pointer-events-none"></div>
     <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -616,7 +620,7 @@
           <a href="https://wa.me/50689452667?text=¡Hola!%20Quisiera%20reservar%20una%20cita%20en%20Amor%20de%20Perro."
              target="_blank"
              class="inline-flex items-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-full font-headline font-black text-base hover:scale-105 transition-transform shadow-xl">
-            <img src="img/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5 brightness-0 invert">
+            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">chat</span>
             Chatear en WhatsApp
           </a>
           <a href="https://www.instagram.com/amordeperro_cr" target="_blank"
@@ -629,7 +633,7 @@
       <!-- Imagen de fondo ubicación -->
       <div class="h-80 lg:h-full relative overflow-hidden min-h-[300px]">
         <img src="img/ubicacion.jpg"
-             onerror="this.src='img/ubicacion.jpg'"
+             onerror="this.src='img/bichon-lentes-rosa.jpg'"
              alt="Moravia, San José, Costa Rica"
              class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-l from-transparent to-primary/50 pointer-events-none"></div>
@@ -650,7 +654,7 @@
      FOOTER
 ══════════════════════════════════ -->
 <footer class="w-full rounded-t-[2.5rem] mt-4 bg-surface-container font-label text-sm tracking-wide">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-screen-xl mx-auto px-8 py-11">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-screen-xl mx-auto px-8 py-16">
     <!-- Brand -->
     <div class="col-span-1">
       <div class="flex items-center gap-2 mb-5">
@@ -658,22 +662,22 @@
              onerror="this.style.display='none'"
              alt="Amor de Perro Logo"
              class="h-8 w-auto object-contain">
-        <div class="text-xl font-black text-zinc-900 font-headline italic">Amor de Perro</div>
+        <div class="text-xl font-black text-primary font-headline italic">Amor de Perro</div>
       </div>
       <p class="text-on-surface-variant leading-relaxed text-sm">
         Elevando el estándar del grooming canino en Costa Rica con pasión, técnica y amor incondicional.
       </p>
       <div class="flex gap-3 mt-7">
         <a href="https://wa.me/50689452667" target="_blank"
-           class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-zinc-900 shadow-sm hover:-translate-y-1 transition-transform" aria-label="WhatsApp">
-          <img src="img/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5">
+           class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:-translate-y-1 transition-transform" aria-label="WhatsApp">
+          <span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">chat</span>
         </a>
         <a href="https://www.instagram.com/amordeperro_cr" target="_blank"
            class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm hover:-translate-y-1 transition-transform" aria-label="Instagram">
           <span class="material-symbols-outlined text-xl">photo_camera</span>
         </a>
         <a href="https://www.facebook.com/share/1G1p2owZxi/" target="_blank"
-           class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-zinc-900 shadow-sm hover:-translate-y-1 transition-transform" aria-label="Facebook">
+           class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:-translate-y-1 transition-transform" aria-label="Facebook">
           <span class="material-symbols-outlined text-xl">public</span>
         </a>
         <a href="https://www.tiktok.com/@amordeperro_cr" target="_blank"
@@ -684,7 +688,7 @@
     </div>
     <!-- Servicios -->
     <div>
-      <h4 class="font-headline font-bold text-zinc-900 mb-5 uppercase tracking-widest text-xs">Servicios</h4>
+      <h4 class="font-headline font-bold text-primary mb-5 uppercase tracking-widest text-xs">Servicios</h4>
       <ul class="space-y-3">
         <li><a href="#servicios" class="text-on-surface-variant hover:text-secondary transition-colors">Baños Naturales</a></li>
         <li><a href="#servicios" class="text-on-surface-variant hover:text-secondary transition-colors">Corte Estético</a></li>
@@ -694,7 +698,7 @@
     </div>
     <!-- Explorar -->
     <div>
-      <h4 class="font-headline font-bold text-zinc-900 mb-5 uppercase tracking-widest text-xs">Explorar</h4>
+      <h4 class="font-headline font-bold text-primary mb-5 uppercase tracking-widest text-xs">Explorar</h4>
       <ul class="space-y-3">
         <li><a href="#tarifas"     class="text-on-surface-variant hover:text-secondary transition-colors">Precios</a></li>
         <li><a href="#galeria"     class="text-on-surface-variant hover:text-secondary transition-colors">Galería</a></li>
@@ -704,7 +708,7 @@
     </div>
     <!-- Contacto -->
     <div>
-      <h4 class="font-headline font-bold text-zinc-900 mb-5 uppercase tracking-widest text-xs">Contacto</h4>
+      <h4 class="font-headline font-bold text-primary mb-5 uppercase tracking-widest text-xs">Contacto</h4>
       <ul class="space-y-3 text-on-surface-variant">
         <li class="flex items-start gap-2">
           <span class="material-symbols-outlined text-base mt-0.5" style="font-variation-settings:'FILL' 1;">location_on</span>
@@ -735,7 +739,7 @@
    target="_blank"
    class="fixed bottom-8 right-8 z-[100] bg-secondary text-on-secondary w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group"
    aria-label="WhatsApp – Reserva tu cita">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="w-8 h-8 brightness-0 invert">
+  <span class="material-symbols-outlined text-3xl" style="font-variation-settings:'FILL' 1;">chat</span>
   <span class="absolute right-[72px] bg-secondary text-on-secondary px-4 py-2 rounded-xl font-headline font-bold text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
     Reserva tu cita
   </span>

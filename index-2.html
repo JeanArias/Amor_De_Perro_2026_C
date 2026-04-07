@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Amor de Perro - Peluquería Canina de Autor</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#e7e8e9",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#2e3132",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#ffd9df",
+                      "secondary-container": "#ff85a3",
+                      "on-tertiary-container": "#714654",
+                      "inverse-primary": "#f0b8c8",
+                      "on-secondary-container": "#781a39",
+                      "on-tertiary-fixed": "#31101d",
+                      "on-surface": "#191c1d",
+                      "surface-variant": "#e1e3e4",
+                      "outline-variant": "#d4c2c6",
+                      "on-surface-variant": "#504447",
+                      "on-background": "#191c1d",
+                      "primary-fixed": "#ffd9e2",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-primary-fixed": "#31101d",
+                      "surface": "#f8f9fa",
+                      "surface-container-low": "#f3f4f5",
+                      "surface-bright": "#f8f9fa",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#633b48",
+                      "secondary": "#a03a57",
+                      "tertiary-fixed": "#ffd9e2",
+                      "primary-container": "#f0b8c8",
+                      "primary": "#7e5260",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#7e5260",
+                      "surface-dim": "#d9dadb",
+                      "on-primary-container": "#714654",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#f0b8c8",
+                      "on-secondary-fixed-variant": "#822240",
+                      "surface-container-highest": "#e1e3e4",
+                      "background": "#f8f9fa",
+                      "tertiary": "#7e5260",
+                      "error-container": "#ffdad6",
+                      "outline": "#827377",
+                      "secondary-fixed-dim": "#ffb1c1",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#f0b8c8",
+                      "surface-container": "#edeeef",
+                      "on-primary-fixed-variant": "#633b48",
+                      "on-secondary-fixed": "#3f0017",
+                      "tertiary-container": "#f0b8c8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .tonal-elevation { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); }
+        .no-border { border: none !important; }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm no-border">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Amor de Perro Logo" class="h-10 w-auto" data-alt="professional minimalist logo for a high-end pet grooming salon with elegant typography and a subtle heart motif" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj6Ma6CL6Xl7kiJHMX3tdx6G_6aGzYwSW1sjo4YVsdORLZFhSGn-CLECEKUe8dAz3MXeXwvrY1ADFgofW4M_oBHQo_Jd_z_dasCv8h500blDF8aeDAyExDI3CmimwmU6NKiEY3Gd-tkjZwHDgmMUv-UH3216vMI1aSGkDtJk1YE3hkXT1N87gbbiZ-5e_Fdn9vqo-E2S2drxVV8Da5xqGjc3cofuJdgwjXDl2lQFbdrswekYueNkL895dTnlUAD2OiSApLCabZVsu9"/>
+<span class="text-2xl font-black text-pink-400 italic font-headline tracking-tight">Amor de Perro</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-pink-500 font-bold border-b-2 border-pink-400 pb-1 font-label" href="#inicio">Inicio</a>
+<a class="text-zinc-600 hover:text-pink-400 transition-colors font-label" href="#servicios">Servicios</a>
+<a class="text-zinc-600 hover:text-pink-400 transition-colors font-label" href="#nosotros">Nosotros</a>
+<a class="text-zinc-600 hover:text-pink-400 transition-colors font-label" href="#tarifas">Tarifas</a>
+<a class="text-zinc-600 hover:text-pink-400 transition-colors font-label" href="#galeria">Galería</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold scale-95 active:scale-100 transition-all hover:shadow-lg hover:shadow-primary/20">
+                Reservar Cita
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface" id="inicio">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10 order-2 lg:order-1">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container text-sm font-bold tracking-widest mb-6 font-label uppercase">Alta Peluquería Canina</span>
+<h1 class="text-6xl lg:text-8xl font-black font-headline text-on-surface leading-[0.9] tracking-tighter mb-8 italic">
+                    Grooming con Amor
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                    Elevamos el estándar del cuidado canino a través de técnicas de autor y un trato profundamente humano. Donde la estética se encuentra con el bienestar.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-bold flex items-center gap-2 transition-all hover:bg-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                        Agendar Sesión
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-bold flex items-center gap-2 transition-all hover:bg-surface-container-high">
+                        Ver Servicios
+                    </button>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="relative z-10 rounded-xl overflow-hidden aspect-[4/5] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="professional editorial shot of a perfectly groomed small dog on a minimalist pastel background with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcitHUrVfnLMuTDpwpadEKeEq_WlwM1OeA9j4yqgLJY6xE0VegOS2RN2ZsbQas0j6EZ_CyynkceHM6o7uv3392PY-qN6Gc7otOUFGfEhzp77GxovQQZwuOJ-QWU1FCxIJIML59LFRXymF98Bnylywk6nn-w4IQBNcMcCuuXjx5X4apLr_Z2q3VPhctc-x3FRbFfEstbTDCbxLJLHOeceVqfdfXYSW9xI9LrwgL3yL2Ynls9YrBkpi6WpMDNJePxXlVaocpwdbUnEpL"/>
+</div>
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-40 -z-10"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-secondary-fixed rounded-full blur-3xl opacity-40 -z-10"></div>
+<!-- Floating Info Card -->
+<div class="absolute -bottom-6 -right-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-xs z-20 hidden md:block">
+<div class="flex items-center gap-4 mb-2">
+<div class="bg-secondary-fixed p-2 rounded-full">
+<span class="material-symbols-outlined text-secondary" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-bold text-on-surface">Excelencia de Autor</p>
+</div>
+<p class="text-sm text-on-surface-variant">Cada corte es una pieza única adaptada a la morfología de tu mascota.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Experiencias Exclusivas (Bento Grid) -->
+<section class="py-24 bg-surface-container-low rounded-t-xl lg:rounded-t-xl" id="servicios">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl lg:text-5xl font-black font-headline text-on-surface mb-4">Experiencias Exclusivas</h2>
+<div class="w-24 h-2 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[800px]">
+<!-- Main Service -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close up of a dog receiving a full professional grooming treatment with focused groomer hands and high-end tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrMNt0uxrGQZgTI_Wet5ULqe77MyIDUOo6wYER2GIgS_klJJLvrjG4dMDAu9H-aVb5trMBXMGBZKloqPmaLOAg_Mu08gu_HhMh0g5NUMjKuGurVmF8O3fUPh7gmfgnjviKVtbHdmmRkMkbdML6UAG48-SzwlDHbypvc_AOCT2KNILlBE5nYNteO-4wl-LUhcjNnuz9nKo6HzsWPNa2IjF-VcIGYbuIR33mGIfvx97NuLKy20hH93sD6FXbFfvvloLyKi5vhpFcVK_e"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="text-3xl font-bold font-headline mb-2">Grooming Completo</h3>
+<p class="text-lg opacity-90 max-w-sm">Nuestra experiencia insignia: Baño, corte a tijera, hidratación y cuidado de uñas.</p>
+</div>
+</div>
+<!-- Secondary Services -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="creative dog grooming using safe organic colors on a small white poodle artistic and professional style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhfgcsfhk9lRrg-gNhQnG-LvvFFP2eESOfmJbecdnPykWVBR9WntHNUweR5uknbTbL4mZZuFnvngefcmzSlypmkuyBuRda8m8_OOiQ90zPltMYmLcJTZ5Craa-MZga6d7nfwtGWpG3WnqMafCnrPwkIrB532ekEssYXoO0osTEFSwYROGgqed35JUmoRO-JazOvyUpTxAa9CTTy-DQZtl0hVFWeALWS6Vg-2XmC_qx-aIDvVUl4mMczrzLZF7JzZackJs3a4sEnjR7"/>
+<div class="absolute inset-0 bg-gradient-to-r from-pink-400/80 to-transparent opacity-40"></div>
+<div class="absolute inset-0 flex items-center p-8">
+<div class="max-w-xs">
+<h3 class="text-2xl font-bold font-headline mb-2">Colorimetría</h3>
+<p class="text-on-surface-variant font-medium">Toques de color seguros y creativos para destacar la personalidad única.</p>
+</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="dog enjoying a relaxing warm bath with lots of fluffy white bubbles and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmeAjM2oV7TuFjsSxYCSQ-_2MK5T9Ooa0yxdCinVfS7-UZbyVMtCKMUi7wtJITqh9VfXPRtpO6FbKO-10Z5oMCOVIAgEiVGcul-rMNpRtzcDiKUGCw5n_uKqBfmxZTnSTZqKlWFaBZN04JcM0q7U2yyxDd3YYMMnhA7tudA---EWrO4VSnkEJ17J_M10_t3HTW2z-mL1ZrQRe9viMEwkIeEG2lXarpvURLjApADi3gDyy0Qdz5U4kkNoFs0RH1R3VqN5zHvbn-c0Tr"/>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<h4 class="font-bold text-lg">Baños SPA</h4>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="stylized scissor cut technique being performed on a fluffy dog ear showing precision and care" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNtr8a_ktDVIiOzM4wRSH9gpBrrNCimNYDBhZKXdreIuTWsrD5httMy-S1PGpAg6gjLQAyvbSlKCNDJl4ZwwbyRwQHOtoOC-ZLWbFok0uzIcKfeHCSNBkxn5TVQNjQfKLeCWwtfQvT9xRvDS_ATy1QYNN0EylrQ4XEC2tRtB4nHTWwJn8f1xuflsZWqV6uS4miYLRYCHRZlN_OQjopFaymDzgviSHaKZoVtP6lV-I77S3jTVFD-O-SzuqmhRKXCT04Xum-OyUIGymN"/>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<h4 class="font-bold text-lg">Corte Higiénico</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- El Alma de Amor de Perro -->
+<section class="py-24 bg-surface overflow-hidden" id="nosotros">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="w-full lg:w-1/2 relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img class="rounded-lg shadow-lg w-full aspect-square object-cover" data-alt="cute white bichon dog wearing pink heart-shaped glasses on a soft pink background looking very stylish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa0me9QmCQuKl1y8Mx4Xiko6BWlAgrVoyoRQYNbipt8XSz9nTg3s8yxn0iOllH07-GBpU-SnD_N63ylCG-uAEM8-fZ-ZF_q70G2WPkd6rxtV5H8x2a6Zz0zJU7m2_VL4VhaKnnyfTz-O3U-ouwNXfWlMt61Qu3fD9QhFoGbYiDluSxt6Zqj7YLFQQetiHWEsJGKFHPUNhWYump9Z1J21IqoybHhKQGp-1nJZ6F4QCXEAyxRslWaprPYlbgCnLB9nYHm2si4pCe3nta"/>
+<img class="rounded-lg shadow-lg w-full aspect-[3/4] object-cover" data-alt="Yorkshire terrier with a cute pink bow in its hair perfectly groomed and looking at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOsJRHPsAAcpIFVaQxLLCb2BKd08mennhhqlMQ-p7WxvVj86RmtwR5aiLJFWrmzFmeWe9D8c2tWeZdctGJ-uLFJJTRVWDvHoW7TclCTn89hdTmahGYi03ZgNhjdPPfdg77k2zJxaSe4JdpZ-nnc6srAX9i2WmJ4JgjJT0doMzgWKsa8rUohA6LGjEs1gMfVil7TJvm4iePVArvBulCncCFcMb0sMjbXSPI3yeMzX1q3tnizjzwLbEqSyn7xdoiMf5BA1fKGdr1td26"/>
+</div>
+<div class="space-y-4 pt-12">
+<img class="rounded-lg shadow-lg w-full aspect-[3/4] object-cover" data-alt="pink miniature poodle with expert grooming standing elegantly in a professional studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiEAeMMBDg2eLkq_fbFAiZwxH9SFI24laSAkQ_VllJ2MXNBwRGx0NYiEzVfY8VxjX2bemoetF0aG8dsLISWd2IhcbL1cgTa2enLKGpnRXdqY8gU6H7FRNjnMYGWUlAOtBRdW9kbJIqjHjoItsRyz7EdRU0b_A62rZYqG2H3BlWPkT74VMI1dAj5tC--Dd-dKZF1bI0TGClVWjgfjawRb9uEhmz98dnhXDJnbOGd0bPErVFZt10W3xjitiT9dbYPvBPNgnk3ncUs18_"/>
+<img class="rounded-lg shadow-lg w-full aspect-square object-cover" data-alt="grey poodle wearing a stylish designer bandana after a grooming session looking happy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkA8rdNIseq9YDToajmwYm1pazkatk0UU8A4xeFU5-HadhFK8oJ4TjJDn2TINmqK9CQMJEtqsHSLhupggofovgA9CaF-AsYah0enZCqaCesOTLPsV7OakjevTMzrova2KulfiY9yWBCnYm8Qcc4LrerJ83Oaufrx0AxfYsJ77bU-GYtgOjM2XTCV6gaGZe993mmO74Cipst31yPZW4oMWB4raPV-3ZKTthEuTJTaxFjupIrIeQz2qxOyRGVrIi-iNxF1gEyJblMusX"/>
+</div>
+</div>
+<!-- Stats overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface-container-lowest p-8 rounded-lg shadow-2xl text-center min-w-[200px]">
+<p class="text-5xl font-black font-headline text-pink-400 mb-1">10+</p>
+<p class="text-sm font-bold text-on-surface-variant uppercase tracking-widest">Años de Arte</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<h2 class="text-4xl lg:text-5xl font-black font-headline text-on-surface mb-8">El Alma de Amor de Perro</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>Nacimos con una premisa clara: el grooming no es solo estética, es una forma de lenguaje entre nosotros y nuestros compañeros más leales.</p>
+<p>En nuestro estudio, cada perro es tratado como una obra de arte. Utilizamos productos de cosmética canina de alta gama, libres de parabenos y adaptados a cada tipo de manto.</p>
+<div class="pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="pets">pets</span>
+<div>
+<h4 class="font-bold text-on-surface">Peluquería de Autor</h4>
+<p class="text-sm">Diseños personalizados según la raza y estilo de vida.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="favorite">favorite</span>
+<div>
+<h4 class="font-bold text-on-surface">Zero Stress</h4>
+<p class="text-sm">Protocolos de manejo amable para reducir la ansiedad.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tarifas (Editorial Table) -->
+<section class="py-24 bg-surface-container-low" id="tarifas">
+<div class="max-w-5xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-black font-headline text-on-surface mb-4">Nuestras Tarifas</h2>
+<p class="text-on-surface-variant">Inversión en la belleza y salud de tu mejor amigo</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm no-border">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-primary-container/30">
+<th class="px-8 py-6 font-headline font-bold text-on-primary-container">Servicio</th>
+<th class="px-8 py-6 font-headline font-bold text-on-primary-container">Descripción</th>
+<th class="px-8 py-6 font-headline font-bold text-on-primary-container text-right">Desde</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/30">
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="px-8 py-6 font-bold text-on-surface">Baño Pro</td>
+<td class="px-8 py-6 text-on-surface-variant">Champú premium, mascarilla, secado y cepillado.</td>
+<td class="px-8 py-6 text-right font-black text-secondary">25€</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="px-8 py-6 font-bold text-on-surface">Corte Estándar</td>
+<td class="px-8 py-6 text-on-surface-variant">Baño completo + corte a máquina y retoque tijera.</td>
+<td class="px-8 py-6 text-right font-black text-secondary">38€</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="px-8 py-6 font-bold text-on-surface">Corte de Autor</td>
+<td class="px-8 py-6 text-on-surface-variant">Estilismo 100% tijera, diseño personalizado.</td>
+<td class="px-8 py-6 text-right font-black text-secondary">55€</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="px-8 py-6 font-bold text-on-surface">Spa Relajante</td>
+<td class="px-8 py-6 text-on-surface-variant">Ozonoterapia e hidratación profunda.</td>
+<td class="px-8 py-6 text-right font-black text-secondary">+15€</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="mt-6 text-sm text-center text-on-surface-variant italic">* Los precios varían según el tamaño, estado del manto y comportamiento de la mascota.</p>
+</div>
+</section>
+<!-- Galería (Asymmetrical Layout) -->
+<section class="py-24 bg-surface" id="galeria">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl lg:text-5xl font-black font-headline text-on-surface mb-4">Galería de Estilo</h2>
+<p class="text-on-surface-variant text-lg">Resultados reales de clientes que ya disfrutan de la experiencia Amor de Perro.</p>
+</div>
+<button class="flex items-center gap-2 font-bold text-secondary hover:text-pink-400 transition-colors">
+                    Seguir en Instagram <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+<div class="break-inside-avoid">
+<img class="w-full rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-500" data-alt="dachshund dog with shiny coat and a cute accessory sitting on a minimalist furniture piece after grooming" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0DQjvLnO-EbnOrNrkKsBmDHvP-jagjEdsnlFVl0b4lDQ9ZKVhSQzY8-xRjdVIGYfhHflHEW-3g6w-_ekPlJBG7yhPGhDzdCKBr9dXladEtcknJb3tP9vPsKZMC8BiSb5xBC6qpYvsIbpDcUB2oaTbmb1y7W7xXkDX9v5MLaCy2oD2Ci2_XM4EG2dZHr3_4TC1tGJUa5Sb5ghxOqS8jvLYf6VmChjFq4PEz-TD5Dhq0Jh2Yt0SIf_tP1lR6SNXFjptkGpYvBymWk8r"/>
+</div>
+<div class="break-inside-avoid">
+<img class="w-full rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-500" data-alt="full body shot of a pink dyed poodle showing creative grooming patterns and precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh9C7CCJzHmbcgcDChjcQO835Oss1UxoIKoB-aR_XvawBloST8IJDCW6im2Pffnk0ZbZ0fRuG4622sy8w8pO61sGcUFavjfx12deHd6ZL5oRD3xvc8MT8VmE-AebiMxeJ23ej2U_qn07Lf1zyo9FLjzNm9uDtwhDxmiK0F6DcA46Qeumu2Ohf4PVoyFboET14-I0BPKrmNidx3KK6UIk5asLdyEF0giGb1KtmnQ5EHvNDATfGHztjywsaK_A0tkVUhDHch_3Khv6ni"/>
+</div>
+<div class="break-inside-avoid">
+<img class="w-full rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-500" data-alt="playful close up of a fluffy white dog with trendy pink glasses in a studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr8PsEqXj_0D47Cofx0ph300imIO7jT6zo12_KgyLzw8xLxsQ-4G5uj7BnZZJ7NP4CW2fSQw4BqAIF2ossLo4JHqMW10UMUrnqOoYPPrb5UFd6FfDewKew7_0WxPHjTmBZyXXElJCTXF1pomHAwrbVpyTemPZUJMuiSzLsfrg9NLYJU6tX8L7jCCxTHDstELWmbGAKIbyEUF3ylLfBR0HposF-NRDjYVXBtATcy4SKljSF18bvsgjgZ_IYmbV3I26BSw1KJka2TzLC"/>
+</div>
+<div class="break-inside-avoid">
+<img class="w-full rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-500" data-alt="well-groomed yorkie sitting on a soft blanket with a vibrant pink bow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO0vjoQQdaztaKC2L3zR1OkgD59oCsRgKzDy5Epi9q11Z1J884tb4AisX4uLsVfLAjniw_LdmCcNlKeRqdLibw2onTMDKsUIsDXMHtGvCnBUs7qMz1TsaOg4SBwzhbL8vm_6tqxxAaeKYSBpeeQC1BHBh9iRy_9BkM1HUgiskeEq74M0r9HBqsYNu0B1A9ZPo3Y9ABeV9RePFNLOmNBEE-MYNOVOFSzB_Ukm_zBZdaNL0KQsf_3jEatzLxStiUPFcSNx-j_8ePTu1I"/>
+</div>
+<div class="break-inside-avoid">
+<img class="w-full rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-500" data-alt="professional dog portrait after grooming wearing a custom designer bandana" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsBl0FeSqW2J1S3iHuTTGT290OboQi5RPY6oEI_LnpkSTP8eoLheV3Bf_Iq88fjaKSKQQpS_I9Sd9aQtvx1uWo1y8KrUsV24J5rtv85h6NptXACA6U9EUP8FkcX1arg96F9QLmWyU_8vpTgJ6pQqD8XzhuiX8vUV2mRn6Ua1g-kS_Ix94lZCVyOIgIEiusYuEdD2l9xzY4OqW7ZPDwSQlZirn6bHlKOs6G6QXaI6NquY9JFQm1DKAkuFv9ZMweilJFZXK8tqPCSMnB"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonios & Contacto -->
+<section class="py-24 bg-surface-container-highest rounded-b-xl lg:rounded-b-xl">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Testimonios Column -->
+<div>
+<h3 class="text-3xl font-black font-headline text-on-surface mb-12">Lo que dicen de nosotros</h3>
+<div class="space-y-8">
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm">
+<div class="flex text-pink-400 mb-4">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-on-surface-variant mb-6 italic leading-relaxed">"Nunca había visto a mi Caniche tan relajado después de una peluquería. El corte de autor es impecable, se nota que aman lo que hacen."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center font-bold text-on-primary-container">MC</div>
+<div>
+<p class="font-bold text-on-surface">María Casares</p>
+<p class="text-sm text-on-surface-variant">Dueña de 'Cotton'</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-xl no-border border-t-8 border-primary">
+<h3 class="text-2xl font-black font-headline text-on-surface mb-2">Reserva tu experiencia</h3>
+<p class="text-on-surface-variant mb-8">Cuéntanos sobre tu mascota y nos pondremos en contacto.</p>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant font-label">Tu Nombre</label>
+<input class="w-full bg-surface-container-highest border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Juan Pérez" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant font-label">Nombre Mascota</label>
+<input class="w-full bg-surface-container-highest border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Bobby" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant font-label">WhatsApp</label>
+<input class="w-full bg-surface-container-highest border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="+34 600 000 000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant font-label">Servicio de interés</label>
+<select class="w-full bg-surface-container-highest border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all">
+<option>Grooming Completo</option>
+<option>Baño SPA</option>
+<option>Colorimetría</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-full mt-4 flex items-center justify-center gap-2 hover:bg-on-secondary-container transition-all">
+                        Enviar Solicitud <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-zinc-50 w-full rounded-t-xl mt-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 max-w-7xl mx-auto text-center md:text-left font-label text-sm tracking-wide">
+<div>
+<h4 class="text-xl font-bold text-zinc-900 mb-6">Amor de Perro</h4>
+<p class="text-zinc-500 leading-relaxed max-w-xs mx-auto md:mx-0">Peluquería canina de autor donde cada detalle cuenta. Un espacio dedicado al bienestar y la estética de tu compañero fiel.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-zinc-900 uppercase tracking-widest text-xs mb-2">Navegación</h4>
+<a class="text-zinc-500 hover:text-pink-400 transition-colors" href="#inicio">Inicio</a>
+<a class="text-zinc-500 hover:text-pink-400 transition-colors" href="#servicios">Servicios</a>
+<a class="text-zinc-500 hover:text-pink-400 transition-colors" href="#tarifas">Tarifas</a>
+<a class="text-zinc-500 hover:text-pink-400 transition-colors" href="#galeria">Galería</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-zinc-900 uppercase tracking-widest text-xs mb-2">Contacto &amp; Social</h4>
+<div class="flex justify-center md:justify-start gap-4">
+<a class="text-pink-400 hover:scale-110 transition-transform" href="#">Instagram</a>
+<a class="text-pink-400 hover:scale-110 transition-transform" href="#">WhatsApp</a>
+<a class="text-pink-400 hover:scale-110 transition-transform" href="#">Facebook</a>
+</div>
+<p class="text-zinc-500 mt-4">Calle de la Moda Canina, 12<br/>Madrid, España</p>
+</div>
+</div>
+<div class="border-t border-zinc-100 py-8 text-center text-zinc-400 text-xs px-8">
+            © 2024 Amor de Perro - Peluquería Canina de Autor
+        </div>
+</footer>
+<!-- FAB for WhatsApp -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center gap-2 group" href="https://wa.me/34000000000">
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-bold">Reserva por WhatsApp</span>
+<span class="material-symbols-outlined text-3xl" data-icon="chat" data-weight="fill">chat</span>
+</a>
+</body></html>
